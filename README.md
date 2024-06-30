@@ -345,35 +345,16 @@ Linux codespaces-f772f0 6.5.0-1022-azure #23~22.04.1-Ubuntu SMP Thu May  9 17:59
 11. What is the available free memory in the system. ***(1 mark)*** 
 __6.0 Gi__.
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
-```bash
-@Zefeyr ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
-```
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
-```bash
-@Zefeyr ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
-```
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
-```bash
-@Zefeyr ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
-```
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
-```bash
-@Zefeyr ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
-```
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
-```bash
-@Zefeyr ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
-```
+__Available space: 20,772,144 KB__.
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Kernel version: 6.5.0-1022-azure
+Hardware architecture: x86_64__
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)***
+__Whwn using 'ls' command in Unix and Unix-like operating systems, it will list directory contents excluding hidden files, while 'ls -asl' gets a detailed list of all files (including hidden ones) with their sizes in blocks and additional file information. 
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __TLB size: 2560 4K pages__
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __For processor 0: The CPU speed is 2445.427 MHz.
+For processor 1: The CPU speed is 2901.549 MHz.__
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
-```bash
-@Zefeyr ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject
-```
+__The process with PID '564' consumes the most CPU cycles by using 4.2% of the CPU__
 
 ## Running your own container instance.
 
