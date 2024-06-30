@@ -444,7 +444,7 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Yes.***
+*** __Yes.__***
 
 ```bash
 @Zefeyr ➜ /workspaces/OSProject (main) $ ls -l /workspaces/OSProject
