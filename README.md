@@ -417,8 +417,8 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** __No because files created within a Docker container are stored inside the container's writable layer which means when the container is stopped or removed, all changes made within the container's filesystem will be lost__.
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Yes, Docker allows you to run multiple instances of the same Docker image concurrently__.
 
 ## Running your own container with persistent storage
 
