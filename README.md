@@ -692,7 +692,8 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 @Zefeyr ➜ /workspaces/OSProject/nodejs-app (main) $ curl http://localhost:3000/random
 Server Error@Zefeyr ➜ /workspaces/OSProject/nodejs-app (main) $ docker ps
 ```
-__Fill answer here__.
+__It indicates that nodejs-container cannot connect to the MySQL database__.
+
 2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
 
 
