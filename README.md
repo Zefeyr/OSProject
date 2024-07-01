@@ -512,9 +512,16 @@ d891bae20a8d   bridge    bridge    local
 8ee0e91ceec6   none      null      local
 2520830145b4   rednet    bridge    local
 ```
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
-4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __bluenet gateway: 172.18.0.1
+rednet gateway:172.19.0.1__.
+4. What is the network address for the running container c1 and c2? ***(1 mark)*** __c1 bluenet: 172.18.0.2
+c2 rednet: 172.19.0.2
+c1 bluenet:__.
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __No__.
+```bash
+@Zefeyr ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
+ping: bad address 'c2'
+```
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
