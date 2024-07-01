@@ -482,7 +482,7 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 User Owner: 1000
 Group Owner: 1000__.
 2. What port is the apache web server running. ***(1 mark)*** __The Apache web server inside the Docker container is running on the container's port 80__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __The open port for the HTTP protocol on the host machine is port 8080.__.
+3. What port is open for http protocol on the host machine? ***(1 mark)*** __The open port for the HTTP protocol on the host machine is port 8080__.
 
 ## Create SUB Networks
 
@@ -501,8 +501,17 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __BusyBox is a software suite that provides a collection of common Unix utilities in a single small executable, designed for minimal resource environments and --name switch in Docker allows you to assign a specific name to a container, making it easier to manage and identify the container__.
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
+```bash
+@Zefeyr ➜ /workspaces/OSProject (main) $ docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+aaa474bf140a   bluenet   bridge    local
+d891bae20a8d   bridge    bridge    local
+42d78fcf6abf   host      host      local
+8ee0e91ceec6   none      null      local
+2520830145b4   rednet    bridge    local
+```
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
 4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
 5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
