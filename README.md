@@ -544,7 +544,7 @@ PING c2 (172.20.0.3): 56 data bytes
 64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.080 ms
 64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.079 ms
 ```
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Previously, c1 and c2 were on separate networks (bluenet and rednet), causing the ping to fail. Now, after connecting both to the bridgenet network, the ping succeeds because they are on the same network, enabling communication between c1 and c2.__.
+2. What is different from the previous ping in the section above? ***(1 mark)*** __Previously, c1 and c2 were on separate networks (bluenet and rednet), causing the ping to fail. Now, after connecting both to the bridgenet network, the ping succeeds because they are on the same network, enabling communication between c1 and c2__.
 
 ## Intermediate Level (10 marks bonus)
 
@@ -687,7 +687,12 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** 
+```bash
+@Zefeyr ➜ /workspaces/OSProject/nodejs-app (main) $ curl http://localhost:3000/random
+Server Error@Zefeyr ➜ /workspaces/OSProject/nodejs-app (main) $ docker ps
+```
+__Fill answer here__.
 2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
 
 
