@@ -6,7 +6,6 @@ Section: 4
 
 Team Mates:
 1. AHMAD NUR ZAFRAN SHAH BIN AHMAD SHAHRIZAL (2213645)
-2. MUHAMMAD HANIF SYAHMI BIN MOHD FITRI (2223305)
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
