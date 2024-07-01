@@ -515,8 +515,7 @@ d891bae20a8d   bridge    bridge    local
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __bluenet gateway: 172.18.0.1
 rednet gateway:172.19.0.1__.
 4. What is the network address for the running container c1 and c2? ***(1 mark)*** __c1 bluenet: 172.18.0.2
-c2 rednet: 172.19.0.2
-c1 bluenet:__.
+c2 rednet: 172.19.0.2__.
 5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __No__.
 ```bash
 @Zefeyr ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
@@ -533,8 +532,19 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)*** __Yes__.
+```bash
+@Zefeyr ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.123 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.056 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.096 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.072 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.088 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.080 ms
+64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.079 ms
+```
+2. What is different from the previous ping in the section above? ***(1 mark)*** __Previously, c1 and c2 were on separate networks (bluenet and rednet), causing the ping to fail. Now, after connecting both to the bridgenet network, the ping succeeds because they are on the same network, enabling communication between c1 and c2.__.
 
 ## Intermediate Level (10 marks bonus)
 
